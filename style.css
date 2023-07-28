@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#1c1c1c, #424242);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+}
+
+header ul li a:hover, header ul li a.active {
+    background: white;
+    color: #1c1c1c;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c1c1c,transparent);
+    z-index: 1000;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    left: -10%;
+    width: 120%;
+    height: 100vh;
+}
+
+.container #scene .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container #scene .layer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.sec {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 100px;
+    background: #1c1c1c;
+}
+
+.sec h2 {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sec h3 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sec p {
+    font-size: 2em;
+    color: white;
+}
+
+.sec ul,ol {
+    font-size: 2em;
+    color: white;
+    padding-left: 2em;
+}
+
+.sec div.links {
+    font-size: 2em;
+    background: white;
+    width: fit-content;
+    padding: 0.25em;
+}
+
+.form {
+    border: 30px solid transparent;
+    border-image: url(images/cuadro_01.png) 33% fill stretch;
+    image-rendering: pixelated;
+}
+
+.form p, label {
+    font-size: 2em;;
+    color: gainsboro;
+}
+
+.form input, textarea, select {
+    margin: 8px;
+    font-size: 1.5em;
+    background-color: #2c3634;
+    border-color: #647188;
+    color: gainsboro;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    display: inline-block;
+    font-size: 2em;
+    color: gainsboro;
+    background-color: transparent;
+    border: 15px solid transparent;
+    border-image: url(images/boton_01_off.png) 33% fill stretch;
+    image-rendering: pixelated;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
+    border-image: url(images/boton_01_on.png) 33% fill stretch;
+}
+
+.video_player {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.link {
+    background: white;
+    color: #1c1c1c;
+    font-size: 1.5em;
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Ignacio Rodao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Ignacio Rodao</a>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#info">Sobre mi</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <div class="layer" data-depth-x="0.1"><img src="images/fondo_p_01.png"></div>
+                <div class="layer" data-depth-x="0.2"><img src="images/fondo_p_02.png"></div>
+                <div class="layer" data-depth-x="0.3"><img src="images/fondo_p_03.png"></div>
+                <div class="layer" data-depth-x="0.4"><img src="images/fondo_p_04.png"></div>
+            </div>
+        </div>
+        <iframe class="video_player" width="1120" height="630" src="https://www.youtube.com/embed/IqFP9HrmMTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <div class="sec">
+        <div class="biografia">
+            <h2 id="info">Desarrollador Fullstack - Indie GameDev</h2>
+            <p>¡Hola! Me llamo Ignacio y me apasiona todo lo relacionado con la tecnología. Actualmente estoy estudiando desarrollo web en Jovenes a Programar.</p>
+            <p>También me interesan los videojuegos y me considero un desarrollador indie.</p>
+            <h3>Habilidades y conocimientos:</h3>
+            <ul>
+                <li>Desarrollo web: HTML5, CSS3, Javascript.</li>
+                <li>Diseño 3D: Blender, Substance Painter.</li>
+                <li>Diseño 2D: GIMP, Photoshop.</li>
+            </ul>
+            <h2 id="contacto">Contacto:</h2>
+            <div class="links">
+                <a class="link" href="mailto:nacho_rodao13@hotmail.com">nacho_rodao13@hotmail.com</a>
+            </div>
+        </div>   
+        <div class="form">
+            <h3>Formulario de Contacto</h3>
+            <form action="" method="get">
+                <label for="form_nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="form_nombre"><br>
+                <label for="form_correo">Correo:</label>
+                <input type="email" name="Correo" id="form_correo"><br>
+                <label for="form_asunto">Asunto:</label>
+                <input type="text" name="Asunto" id="form_asunto"><br>
+                <label for="form_categoria">Categoria:</label>
+                <select name="Categoria" id="form_categoria">
+                    <option value="consulta">Consulta</option>
+                    <option value="propuesta">Propuesta</option>
+                    <option value="reporte">Reporte</option>
+                    <option value="otro">Otro</option>
+                </select><br>
+                <label for="form_mensaje">Mensaje:</label><br>
+                <textarea name="Mensaje" id="form_mensaje" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script> -->
+</body>
+</html>
